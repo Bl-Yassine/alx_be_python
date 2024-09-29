@@ -10,7 +10,7 @@ try:
 except ValueError:
     print("Invalid temperature. Please enter a numeric value.")
 else:
-    Weather = input("Is this temperature in Celsius or Fahrenheit? (C/F) ")
+    Weather = input("Is this temperature in Celsius or Fahrenheit? (C/F):")
 
     def convert_to_celsius(fahrenheit):
         FtoC = (fahrenheit - 32) * FAHRENHEIT_TO_CELSIUS_FACTOR
