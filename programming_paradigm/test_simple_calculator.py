@@ -15,5 +15,5 @@ class TestClass(unittest.TestCase):
     def test_subtraction(self):
         self.assertEqual(self.calc.subtract(5,2),3)
 
-    def test_multiply(self):
+    def test_multiplication(self):
         self.assertEqual(self.calc.multiply(3,5), 15)
