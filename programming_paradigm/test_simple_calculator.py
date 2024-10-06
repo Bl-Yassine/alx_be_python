@@ -9,7 +9,7 @@ class TestClass(unittest.TestCase):
     def test_addition(self):
         self.assertEqual(self.calc.add(5,8),13)
     
-    def test_divide(self):
+    def test_division(self):
         self.assertEqual(self.calc.divide(4,2),2)
 
     def test_subtraction(self):
