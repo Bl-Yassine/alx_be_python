@@ -1,7 +1,6 @@
 #Robust division Calculator with command line arguments
 
-numerator = input("Entre the numerator :")
-denominator = input("Entre the denominator :") 
+
 
 def safe_divide(numerator, denominator):
     try :
