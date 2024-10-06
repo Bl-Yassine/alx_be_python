@@ -3,9 +3,11 @@ import unittest
 from simple_calculator import SimpleCalculator
 
 class TestClass(unittest.TestCase):
-    result = add(a,b)
-    self.assertEqual(result , a+b)
-
-
-if __name__ == "__main__":
-    unittest.main()
+    def CallSc(self):
+        self.calc=SimpleCalculator()
+    
+    def testAdd(self):
+        self.assertEqual(self.calc.add(5,8),13)
+    
+    def testDiv(self):
+        self.assertEqual(self.calc.divide(4,2),2)
