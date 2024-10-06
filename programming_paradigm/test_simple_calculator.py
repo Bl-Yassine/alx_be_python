@@ -6,8 +6,8 @@ class TestClass(unittest.TestCase):
     def CallSc(self):
         self.calc=SimpleCalculator()
     
-    def testAdd(self):
+    def test_addition(self):
         self.assertEqual(self.calc.add(5,8),13)
     
-    def testDiv(self):
+    def test_division(self):
         self.assertEqual(self.calc.divide(4,2),2)
