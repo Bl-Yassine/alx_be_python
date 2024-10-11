@@ -5,20 +5,20 @@ class Book:
         self.title = title
         self.author = author
     def __str__(self):
-        return f"Book: {self.title} by {self.author}"
+        return f"Book: {self.title} by {self.author}"  
     
 class EBook(Book):
     def __init__(self,title,author,file_size):
         super().__init__(title,author)
         self.file_size = file_size
-        return f"EBook: {title} by {author}, File Size :{file_size}KB"
+        print(f"EBook: {title} by {author}, File Size :{file_size}KB")
         pass
 
 class PrintBook(Book):
     def __init__(self,title,author,page_count):
         super().__init__(title,author)
         self.page_count = page_count
-        return f"PrintBook: {title} by {self.author}, PAge Count: {page_count}"
+        print(f"PrintBook: {title} by {self.author}, PAge Count: {page_count}")
         pass
 class Library(Book,EBook,PrintBook):
     def __init__(self):
