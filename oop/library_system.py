@@ -20,7 +20,7 @@ class PrintBook(Book):
         self.page_count = page_count
         print(f"PrintBook: {title} by {self.author}, PAge Count: {page_count}")
         pass
-class Library(Book,EBook,PrintBook):
+class Library():
     def __init__(self):
         self.books = []
         
@@ -41,4 +41,4 @@ class Library(Book,EBook,PrintBook):
         for book in self.books:
             return book
                 
-                
+
