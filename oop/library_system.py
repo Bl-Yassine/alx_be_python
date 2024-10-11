@@ -23,7 +23,7 @@ class PrintBook(Book):
     def __str__(self):
         return f"PrintBook: {self.title} by {self.author}, PAge Count: {self.page_count}"
 
-class Library():
+class Library(Book,EBook,PrintBook):
     def __init__(self):
         self.books = []
         
