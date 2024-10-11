@@ -12,15 +12,15 @@ class EBook(Book):
     def __init__(self,title,author,file_size):
         super().__init__(title,author)
         self.file_size = file_size
-        print(f"EBook: {title} by {author}, File Size :{file_size}KB")
-        pass
+        def __str__(self):
+            return f"EBook: {self.title} by {self.author}, File Size: {self.file_size}KB"
 
 class PrintBook(Book):
     def __init__(self,title,author,page_count):
         super().__init__(title,author)
         self.page_count = page_count
-        print(f"PrintBook: {title} by {self.author}, PAge Count: {page_count}")
-        pass
+        def __str__(self):
+            return f"PrintBook: {self.title} by {self.author}, Page Count: {self.page_count}"
 class Library:
     def __init__(self):
         self.books = []
