@@ -21,7 +21,14 @@ class Library(Book,EBook,PrintBook):
 
     def add_book(self,title,author,page_count,file_size,book):
         super().__init__(title,author,page_count,file_size)
-        self._books.append(book)
+        book_info = {
+            "title" : title,
+            "author" : author,
+            "file_size" : file_size,
+            "page" : page_count,
+        }
+        self._books.append(book_info)
     
     def list_books(self):
-        print(f"the list books : {self._books}")
+        def __str__(self):
+            return f"the list books : {self._books}"
