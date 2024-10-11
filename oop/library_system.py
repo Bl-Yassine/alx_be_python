@@ -31,4 +31,13 @@ class Library(Book,EBook,PrintBook):
     
     def list_books(self):
         def __str__(self):
-            return f"the list books : {self.books}"
+            for bkinf in self.books :
+                if hasattr(bkinf , "file_size") and bkinf.file_size is not None:
+                    return f"EBook: {bkinf.title} by {bkinf.author}, File Size :{bkinf.file_size}KB"
+                
+                if hasattr(bkinf , "page_count") and bkinf.page_count is not None:
+                    return f"PrintBook: {bkinf.title} by {bkinf.author}, PAge Count: {bkinf.page_count}"
+                
+                else:
+                    return f"Book: {bkinf.title} by {bkinf.author}"
+                
