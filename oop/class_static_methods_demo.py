@@ -1,6 +1,6 @@
 # Distinguishing Between Class Methods and Static Methods
 
-class calculator:
+class Calculator:
     calculation_type = "Arithmetic Operations"
 
     @staticmethod
