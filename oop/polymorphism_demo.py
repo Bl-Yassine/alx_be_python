@@ -10,13 +10,12 @@ class Rectangle(Shape):
         self.width = width
     
     def area(self):
-        print(f"The area of the Rectangle is: {self.length * self.width}")
+        return self.length * self.width
     
 class Circle(Shape):
     def __init__(self, radius):
         self.radius = radius 
     
     def area(self):
-        print(f"The area of the Circle is: {math.pi * self.radius ** 2}")
-
+        return math.pi * self.radius ** 2
 
